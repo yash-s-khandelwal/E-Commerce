@@ -5,26 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clone site</title>
     <link rel="stylesheet" href="bootstrap.css" />
-    <style>
-      .navbar {
-        display: flex;
-        flex-direction: row;
-        height: 60px;
-      }
-      .navbar ul{
-        display: flex;
-        list-style-type:none;
-        align-items: center;
-
-      }
-      .navbar li{
-        padding:10px;
-      }
-    </style>
+    <link rel="stylesheet" href="custom.css">
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <nav class="cnavbar nav">
         <ul>
           <li>InnovateTech</li> <!-- used for logo and homepage-->
           <li>contact us</li>
@@ -32,7 +17,7 @@
         </ul>
 
         <ul>
-          <li>Search bar</li>
+          <li class="inp">Search bar</li>
           <li>Wishlist</li>
           <li>Cart</li>
           <li>Login</li>
@@ -40,6 +25,13 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <div class="container cardsContainer">
+        <div class="product">1</div>
+        <div class="product">2</div>
+        <div class="product">3</div>
+        <div class="product">4</div>
+      </div>
+    </main>
   </body>
 </html>

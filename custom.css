@@ -1,0 +1,37 @@
+:root{
+    --primary-color: #167ADA;
+    --secondary-color:#467E7A;
+    --tertiary-color:#EEE8A9;
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.cnavbar {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+  }
+  .cnavbar ul{
+    display: flex;
+    list-style-type:none;
+    align-items: center;
+    margin:0 20px;
+  }
+  .cnavbar li{
+    padding:10px;
+  }
+  .cardsContainer{
+    display:flex;
+    flex-direction: row;
+    margin:10px;
+  }
+  .product{
+    height:400px;
+    width:300px;
+    background-color: var(--secondary-color);
+    margin:10px;
+  }
