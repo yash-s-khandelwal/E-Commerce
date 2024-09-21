@@ -3,35 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clone site</title>
+    <title>Innovate Tech</title>
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="custom.css">
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
       <nav class="cnavbar nav">
         <ul>
-          <li>InnovateTech</li> <!-- used for logo and homepage-->
-          <li>contact us</li>
-          <li>about us</li>
+          <li><a href="index.html"><img src="logo.png" width="60px"></a></li> <!-- used for logo and homepage-->
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
         </ul>
 
         <ul>
           <li class="inp">Search bar</li>
           <li>Wishlist</li>
           <li>Cart</li>
-          <li>Login</li>
+          <button onclick="document.getElementById('id01').style.display='block'" id="toplogin">Login</button>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <div class="container cardsContainer">
+    <main class="container-xl main">
+      <div class="container-xl cardsContainer">
         <div class="product">1</div>
         <div class="product">2</div>
         <div class="product">3</div>
         <div class="product">4</div>
+        <div class="product">5</div>
+        <div class="product">6</div>
+        <div class="product">7</div>
+        <div class="product">8</div>
       </div>
+
+
+
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post" name="loginpage">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" onclick="ValidateEmail(document.loginpage.email)">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
     </main>
   </body>
 </html>
